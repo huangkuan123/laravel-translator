@@ -10,8 +10,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Huangkuan\\LaravelTranslator\\Providers\\TranslatorServiceProvider"
-            ]
+                "Huangkuan\\LaravelTranslator\\TranslatorServiceProvider"
+            ],
+            "aliases": {
+                "LaravelTranslator": "Huangkuan\\LaravelTranslator\\LaravelTranslator"
+            }
         }
     },
     "authors": [

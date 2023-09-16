@@ -1,13 +1,13 @@
 <?php
 
-namespace Huangkuan\LaravelTranslator\Providers;
+namespace Huangkuan\LaravelTranslator;
 
 use Huangkuan\LaravelTranslator\LaravelTranslator;
 use Huangkuan\LaravelTranslator\Translator;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use \Illuminate\Support\ServiceProvider;
 
-class TranslatorServiceProvider extends ServiceProvider implements DeferrableProvider
+class TranslatorServiceProvider extends ServiceProvider
 {
 
     public function boot()
