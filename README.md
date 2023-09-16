@@ -12,6 +12,18 @@
 注意，这一切都是文本翻译。其中部分平台主推使用他们的 `SDK`，本组件并未使用他们提供的`SDK`，因为这仅是文本翻译的组件。
 该包统一使用 `HTTP` 客户端，用`POST`方法进行请求，这也是大多数组件推荐的请求方式。
 
+## 安装方式
+1. 下载
+```
+composer require huangkuan/laravel-translator
+```
+2. 发布配置文件
+```
+ php artisan vendor:publish --tag=laravel-translator
+ 或
+ php artisan vendor:publish --provider=Huangkuan\LaravelTranslator\Providers\TranslatorServiceProvider
+```
+
 ## 使用方式
 
 ### 获取实例的几种方式
@@ -47,7 +59,7 @@
     $msg = $rep->getMsg();
 ```
 
-```json
+```text
 $result 结构：
 array: 2 [
 ▼
@@ -82,7 +94,7 @@ array: 4 [
 
 ## trans 方法的第四个参数
 
-有时候我们会自定义一些数据，进行请求，可能是想往 post 数据中加一些东西，
+有时候我们会自定义一些数据，进行请求，可能是想往`post`数据中加一些东西，
 有时候想往请求头中加一些，有时候是想对`Http`客户端进行一些配置。这个时候我们可以灵活使用
 `trans`方法的第四个参数(args)。这个参数是非常有用的。<br>
 **这个参数将会覆盖掉原有的默认值**,如下图，某组件默认采用的请求头
