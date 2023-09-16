@@ -1,6 +1,7 @@
 {
     "name": "huangkuan/laravel-translator",
     "license": "MIT",
+    "version": "1.0.0",
     "autoload": {
         "psr-4": {
             "Huangkuan\\LaravelTranslator\\": "src/"
