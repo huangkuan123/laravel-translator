@@ -10,7 +10,10 @@
         "laravel": {
             "providers": [
                 "Huangkuan\\LaravelTranslator\\Providers\\TranslatorServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "LaravelTranslator": "Huangkuan\\LaravelTranslator\\LaravelTranslator"
+            }
         }
     },
     "authors": [
