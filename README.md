@@ -15,7 +15,7 @@
 ## 安装方式
 1. 下载
 ```
-composer require huangkuan/laravel-translator
+composer require huangkuan/laravel-translator:@dev
 ```
 2. 发布配置文件
 ```
