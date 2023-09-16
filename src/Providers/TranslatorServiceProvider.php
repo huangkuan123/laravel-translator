@@ -22,7 +22,6 @@ class TranslatorServiceProvider extends ServiceProvider implements DeferrablePro
         $this->app->singleton('laravel-translator', function () {
             return new Translator();
         });
-        $this->app->alias(LaravelTranslator::class, 'laravel-translator');
     }
 
     public function provides()
