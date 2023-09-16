@@ -26,6 +26,6 @@ class TranslatorServiceProvider extends ServiceProvider implements DeferrablePro
 
     public function provides()
     {
-        return [Translator::class];
+        return ['laravel-translator', Translator::class];
     }
 }
