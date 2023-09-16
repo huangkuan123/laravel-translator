@@ -2,6 +2,7 @@
 
 namespace Huangkuan\LaravelTranslator\Providers;
 
+use Huangkuan\LaravelTranslator\LaravelTranslator;
 use Huangkuan\LaravelTranslator\Translator;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use \Illuminate\Support\ServiceProvider;
@@ -21,6 +22,7 @@ class TranslatorServiceProvider extends ServiceProvider implements DeferrablePro
         $this->app->singleton('laravel-translator', function () {
             return new Translator();
         });
+        $this->app->alias(LaravelTranslator::class, 'laravel-translator');
     }
 
     public function provides()
